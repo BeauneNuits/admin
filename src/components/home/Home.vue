@@ -44,8 +44,8 @@ export default {
             'notifyError'
         ]),
         log(mail, password) {
-            const rectifiedMail = mail.trim().toLocaleLowerCase();
-            this.login({ meanOfLogin: 'etuMail', data: rectifiedMail, password })
+            const loweredMail = mail.trim().toLocaleLowerCase();
+            this.login({ meanOfLogin: 'etuMail', data: loweredMail, password })
                 .catch((err) => {
                     let message;
                     switch (err.statusText) {
