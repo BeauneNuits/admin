@@ -28,7 +28,8 @@ export default {
             typeOptions: [
                 { name: 'Chèque', value: 'check' },
                 { name: 'Espèces', value: 'cash' },
-                { name: 'Annulation CB', value: 'card' }
+                { name: 'Annulation CB', value: 'card' },
+                { name: 'Virement', value: 'wire' }
             ]
         };
     },
